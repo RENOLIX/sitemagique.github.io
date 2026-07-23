@@ -70,5 +70,6 @@ body.dark-mode #cs-navigation .cs-lang-option.cs-lang-active {
   #cs-navigation .cs-lang-switcher {
     margin-left: -0.45rem;
     margin-right: -0.25rem;
+    transform: translateX(0.5rem);
   }
 }
