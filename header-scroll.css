@@ -1,0 +1,30 @@
+/* Keep the floating navigation on page load, then dock it edge-to-edge on scroll. */
+@media only screen and (min-width: 1024px) {
+  body.scroll #cs-navigation,
+  #cs-navigation.is-scrolled {
+    top: 0 !important;
+    left: 0 !important;
+    transform: none !important;
+    border-radius: 0 !important;
+    width: 100vw !important;
+    max-width: none !important;
+    padding-inline: 0 !important;
+  }
+
+  body.scroll #cs-navigation .cs-container,
+  #cs-navigation.is-scrolled .cs-container {
+    max-width: 90rem;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  body.scroll #cs-navigation,
+  #cs-navigation.is-scrolled {
+    top: 0;
+    left: 0;
+    transform: none;
+    border-radius: 0;
+    width: 100%;
+    max-width: none;
+  }
+}
