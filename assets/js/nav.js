@@ -50,3 +50,5 @@
     logo.removeAttribute('srcset');
   });
 })();
+
+(()=>{const s=document.createElement('style');s.textContent='#cs-navigation .cs-logo-placeholder{z-index:10;position:relative;display:block;flex:0 0 7.5rem;margin:0 auto 0 0;height:3rem;width:7.5rem}@media (min-width:64rem){#cs-navigation .cs-logo-placeholder{flex-basis:clamp(7.5rem,18.4%,10.125rem);width:clamp(7.5rem,18.4%,10.125rem)}}';document.head.append(s)})();
