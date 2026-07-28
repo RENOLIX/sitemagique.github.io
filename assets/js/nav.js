@@ -2,7 +2,7 @@
 
 // Shared Site Magique brand treatment for every page header.
 (() => {
-  const logoSrc = '/sitemagique.github.io/assets/images/site-magique-logo.png?v=1';
+  const logoSrc = '/sitemagique.github.io/assets/images/site-magique-logo.png?v=2';
   const logoStyle = document.createElement('style');
 
   logoStyle.textContent = `
