@@ -15,13 +15,13 @@
       const rect = story.getBoundingClientRect();
       const travel = Math.max(1, story.offsetHeight - window.innerHeight);
       const progress = clamp(-rect.top / travel, 0, 1);
-      const copyProgress = range(progress, .02, .27);
-      const metaProgress = range(progress, .16, .43);
-      copy.style.opacity = copyProgress;
-      copy.style.filter = 'blur(' + ((1 - copyProgress) * 20) + 'px)';
+      const copyProgress = range(progress, 0, .1);
+      const metaProgress = range(progress, .06, .18);
+      copy.style.opacity = String(.32 + copyProgress * .68);
+      copy.style.filter = 'blur(' + ((1 - copyProgress) * 10) + 'px)';
       copy.style.transform = 'translateY(' + ((1 - copyProgress) * 10) + '%)';
-      meta.style.opacity = metaProgress;
-      meta.style.filter = 'blur(' + ((1 - metaProgress) * 20) + 'px)';
+      meta.style.opacity = String(.18 + metaProgress * .82);
+      meta.style.filter = 'blur(' + ((1 - metaProgress) * 12) + 'px)';
       meta.style.transform = 'translateY(' + ((1 - metaProgress) * 20) + '%)';
     };
     if (reduced) {
