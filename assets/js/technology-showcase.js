@@ -43,6 +43,10 @@
     section.querySelectorAll('.sm-av-grid').forEach((grid) => {
       [...grid.children].forEach((item, index) => item.style.setProperty('--av-delay', ((index % columns) * 120) + 'ms'));
     });
+    const columns = window.matchMedia('(max-width: 40rem)').matches ? 2 : 4;
+    section.querySelectorAll('.sm-av-grid').forEach((grid) => {
+      [...grid.children].forEach((item, index) => item.style.setProperty('--av-delay', ((index % columns) * 120) + 'ms'));
+    });
     const revealItems = [...section.querySelectorAll('[data-av-reveal]')];
     if (!('IntersectionObserver' in window)) {
       revealItems.forEach((item) => item.classList.add('is-visible'));
