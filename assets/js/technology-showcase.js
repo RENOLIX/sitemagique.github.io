@@ -39,8 +39,12 @@
       window.addEventListener('resize', requestUpdate, { passive: true });
       updateStory();
     }
+    const columns = window.matchMedia('(max-width: 40rem)').matches ? 2 : 4;
+    section.querySelectorAll('.sm-av-grid').forEach((grid) => {
+      [...grid.children].forEach((item, index) => item.style.setProperty('--av-delay', ((index % columns) * 120) + 'ms'));
+    });
     const revealItems = [...section.querySelectorAll('[data-av-reveal]')];
-    if (reduced || !('IntersectionObserver' in window)) {
+    if (!('IntersectionObserver' in window)) {
       revealItems.forEach((item) => item.classList.add('is-visible'));
       return;
     }
@@ -50,7 +54,7 @@
         entry.target.classList.add('is-visible');
         observer.unobserve(entry.target);
       });
-    }, { threshold: .16, rootMargin: '0px 0px -8% 0px' });
+    }, { threshold: .08, rootMargin: '0px 0px -5% 0px' });
     revealItems.forEach((item) => observer.observe(item));
   };
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init, { once: true });
