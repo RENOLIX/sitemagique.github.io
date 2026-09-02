@@ -20,10 +20,7 @@ body.dark-mode #sbs-1362 .cs-image-group{border:0;background:transparent;box-sha
 #pricing-1690 .cs-content>.cs-button-solid{margin-top:.5rem}
 }
 
-/* Prevent the desktop billboard supports from taking over the phone layout. */
+/* Keep one set of billboard supports on phones and remove only the duplicate. */
 @media only screen and (max-width:47.999rem){
-#cta-1693 .cs-container:after,
 #cta-1693 .cs-wrapper:after{content:none!important;display:none!important}
-#cta-1693{padding-bottom:clamp(3.5rem,12vw,5rem)}
-#cs-footer-840{padding-top:clamp(5rem,18vw,7rem)}
 }
