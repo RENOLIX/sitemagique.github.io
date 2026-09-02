@@ -3,14 +3,14 @@
 
 /* SITE MAGIQUE mobile commitment portrait */
 @media only screen and (max-width:47.999rem){
-#sbs-1362 .cs-image-group{height:clamp(25rem,120vw,31rem);border:1px solid rgba(0,45,82,.12);border-radius:1.5rem;background:linear-gradient(155deg,#eef9ff 0%,#b9e6ff 100%);box-shadow:0 1rem 2.5rem rgba(0,45,82,.14)}
+#sbs-1362 .cs-image-group{height:clamp(25rem,120vw,31rem);border:0;border-radius:0;background:transparent;box-shadow:none}
 #sbs-1362 .cs-background img{object-fit:contain;object-position:center bottom;transform:scale(.78);transform-origin:center bottom}
 #sbs-1362 .cs-box{right:.75rem;bottom:.75rem;width:auto;max-width:calc(100% - 1.5rem);padding:.7rem .8rem;border-radius:.7rem;gap:.6rem;box-shadow:0 .5rem 1.5rem rgba(0,45,82,.18)}
 #sbs-1362 .cs-flex{min-width:0}
 #sbs-1362 .cs-name{font-size:clamp(.72rem,3.2vw,.88rem);white-space:nowrap}
 #sbs-1362 .cs-job{font-size:.72rem}
 #sbs-1362 .cs-box-icon{width:2rem;height:2rem;object-fit:contain;flex:none}
-body.dark-mode #sbs-1362 .cs-image-group{border-color:rgba(67,183,255,.2);background:linear-gradient(155deg,#061a2a 0%,#0a3651 100%)}
+body.dark-mode #sbs-1362 .cs-image-group{border:0;background:transparent;box-shadow:none}
 }
 /* SITE MAGIQUE mobile pricing alignment */
 @media only screen and (max-width:47.999rem){
