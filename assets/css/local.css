@@ -12,3 +12,10 @@
 #sbs-1362 .cs-box-icon{width:2rem;height:2rem;object-fit:contain;flex:none}
 body.dark-mode #sbs-1362 .cs-image-group{border-color:rgba(67,183,255,.2);background:linear-gradient(155deg,#061a2a 0%,#0a3651 100%)}
 }
+/* SITE MAGIQUE mobile pricing alignment */
+@media only screen and (max-width:47.999rem){
+#pricing-1690 .cs-content{flex-direction:column!important;align-items:center!important;text-align:center!important;gap:1.75rem!important}
+#pricing-1690 .cs-flex{width:100%;text-align:center}
+#pricing-1690 .cs-topper,#pricing-1690 .cs-title,#pricing-1690 .cs-text{margin-left:auto!important;margin-right:auto!important;text-align:center!important}
+#pricing-1690 .cs-content>.cs-button-solid{margin-top:.5rem}
+}
