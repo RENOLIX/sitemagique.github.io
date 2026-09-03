@@ -1,0 +1,8 @@
+/* SITE MAGIQUE author portrait: keep the face prominent in every small avatar. */
+.blog-author-img img,
+.recent-articles .blog-author-img img,
+.blog-article .blog-author-img img {
+  object-position: center 27% !important;
+  transform: scale(1.55);
+  transform-origin: center 27%;
+}
