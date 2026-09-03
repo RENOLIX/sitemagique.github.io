@@ -22,7 +22,7 @@ body.dark-mode #sbs-1362 .cs-image-group{border:0;background:transparent;box-sha
 
 /* Keep one set of billboard supports on phones and remove only the duplicate. */
 @media only screen and (max-width:47.999rem){
-#cta-1693 .cs-wrapper{transform:translateX(-50%) translateY(4.75rem)!important}
+#cta-1693 .cs-wrapper{transform:translateX(-50%) translateY(7rem)!important}
 #cta-1693 .cs-container:after{height:12rem!important}
 #cta-1693 .cs-wrapper:after{content:""!important;display:block!important;top:calc(80% - 4.75rem)!important;height:12rem!important}
 }
