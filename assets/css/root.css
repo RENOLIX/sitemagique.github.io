@@ -5,5 +5,5 @@
 #cta-1693 .cs-container{top:9rem!important}
 body.dark-mode #cta-1693 .cs-lights-wrapper{transform:translateX(-50%) translateY(9rem)!important}
 #cta-1693 .cs-container:after{height:12rem!important}
-#cta-1693 .cs-wrapper:after{content:"!important;display:block!important;top:calc(80% - 4.75rem)!important;height:12rem!important}
+#cta-1693 .cs-wrapper:after{content:""!important;display:block!important;top:calc(80% - 4.75rem)!important;height:12rem!important}
 }
