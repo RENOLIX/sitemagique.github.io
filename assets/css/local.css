@@ -28,3 +28,9 @@ body.dark-mode #cta-1693 .cs-lights-wrapper{transform:translateX(-50%) translate
 #cta-1693 .cs-container:after{height:12rem!important}
 #cta-1693 .cs-wrapper:after{content:""!important;display:block!important;top:calc(80% - 4.75rem)!important;height:12rem!important}
 }
+
+/* Accueil mobile : bouton Services centré et portrait engagement rapproché. */
+@media only screen and (max-width:47.999rem){
+#services-966>.cs-container>.cs-button-solid{align-self:center!important;margin-left:auto!important;margin-right:auto!important}
+#sbs-1362{margin-top:-4rem!important}
+}
