@@ -20,3 +20,6 @@ body.dark-mode #reviews-355 .sm-commitment-process{background:rgba(0,0,0,.35)}
 body.dark-mode #reviews-355 .sm-process-heading h3,body.dark-mode #reviews-355 .sm-process-heading p,body.dark-mode #reviews-355 .sm-process-grid h4,body.dark-mode #reviews-355 .sm-process-grid p{color:var(--bodyTextColorWhite)}
 body.dark-mode #reviews-355 .sm-process-grid li{background:rgba(67,183,255,.08);border-color:rgba(67,183,255,.24)}
 body.dark-mode #reviews-355 .sm-process-grid li>span{color:var(--secondary)}
+/* CTA de la page Notre engagement : bouton centré. */
+#reviews-355 + #cta-1693 .cs-content{align-items:center;text-align:center}
+#reviews-355 + #cta-1693 .cs-button-solid{margin-left:auto;margin-right:auto}
