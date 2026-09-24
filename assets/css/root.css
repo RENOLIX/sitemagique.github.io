@@ -7,3 +7,9 @@ body.dark-mode #cta-1693 .cs-lights-wrapper{transform:translateX(-50%) translate
 #cta-1693 .cs-container:after{height:12rem!important}
 #cta-1693 .cs-wrapper:after{content:""!important;display:block!important;top:calc(80% - 4.75rem)!important;height:12rem!important}
 }
+
+/* Rythme mobile partage des pages interieures - CTA et footer exclus. */
+@media only screen and (max-width:47.999rem){
+#services-1331,#sbs-1456,#faq-2066,#content-page-714,#ceo-message,.blog-content{padding-top:clamp(3.25rem,14vw,4rem)!important;padding-bottom:clamp(3.25rem,14vw,4rem)!important}
+#services-1331 .cs-container,#sbs-1456 .cs-container,#faq-2066 .cs-container,#content-page-714 .cs-container,#ceo-message .cs-container,.blog-content .cs-container{gap:clamp(2rem,8vw,3rem)!important}
+}

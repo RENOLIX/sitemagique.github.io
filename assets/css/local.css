@@ -40,3 +40,14 @@ body.dark-mode #cta-1693 .cs-lights-wrapper{transform:translateX(-50%) translate
 #sbs-1362 .cs-content>.cs-button-solid{align-self:center!important;margin-left:auto!important;margin-right:auto!important}
 #sbs-1362{margin-top:-4rem!important}
 }
+
+/* Rythme mobile uniforme des sections de contenu - CTA et footer exclus. */
+@media only screen and (max-width:47.999rem){
+#services-966,#sbs-1362,#portfolio,#sbs-1640,#pricing-1690,#blog-1347,#reviews-355{padding-top:clamp(3.25rem,14vw,4rem)!important;padding-bottom:clamp(3.25rem,14vw,4rem)!important}
+#services-966 .cs-container,#sbs-1362 .cs-container,#portfolio .cs-container,#sbs-1640 .cs-container,#pricing-1690 .cs-container,#blog-1347 .cs-container,#reviews-355 .cs-container{gap:clamp(2rem,8vw,3rem)!important}
+#services-966 .cs-card-group,#portfolio .cs-card-group,#pricing-1690 .cs-card-group,#blog-1347 .cs-card-group,#reviews-355 .cs-card-group{row-gap:clamp(1.5rem,6vw,2rem)!important}
+#sbs-1362{margin-top:-1.5rem!important}
+#sbs-1362 #list-1597{gap:clamp(1.5rem,6vw,2rem)!important;margin-bottom:1.75rem!important}
+#sbs-1640 .cs-title{margin-bottom:1.75rem!important}
+#sbs-1640 #list-823{row-gap:1.25rem!important;margin-bottom:1.75rem!important}
+}

@@ -10,3 +10,11 @@
 
 
 #tech-stack-showcase + #pricing-1690{padding-top:clamp(4rem,7vw,6rem)!important}
+
+/* Mobile spacing refinement */
+@media (max-width:40rem){
+#tech-stack-showcase .sm-av-sticky{padding-top:3.5rem;padding-bottom:2rem}
+#tech-stack-showcase .sm-av-label{margin-top:2rem}
+#tech-stack-showcase .sm-av-group{margin-bottom:3rem}
+#tech-stack-showcase .sm-av-skills{padding-top:1.75rem;padding-bottom:2rem}
+}
