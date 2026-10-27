@@ -167,3 +167,5 @@ for path in ROOT.rglob('index.html'):
     pages.append('https://sitemagique.com'+page)
 put('sitemap.xml','<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join('<url><loc>'+x+'</loc></url>\n' for x in sorted(pages))+'</urlset>\n')
 print(f'Generated {len(DATA)*2} service pages; shared navigation, images and links updated.')
+import runpy
+runpy.run_path(str(ROOT/'scripts/service-designs.py'))

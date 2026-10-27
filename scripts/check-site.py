@@ -41,7 +41,9 @@ for lang in ['fr','en']:
         page=ROOT/('en' if lang=='en' else '')/item['slug']/'index.html'; d=docs[page]
         if len(d.xpath('//main//h1'))!=1:errors.append(f'{page}: expected one H1')
         if len(d.xpath('//main//details'))!=3:errors.append(f'{page}: FAQ missing')
-        if not d.xpath('//main//img[@src="/assets/images/services-beach.png"]'):errors.append(f'{page}: beach photo missing')
+        if d.xpath('//main//img[@src="/assets/images/services-beach.png"]'):errors.append(f'{page}: repeated beach photo remains')
+        if not d.xpath('//main//div[contains(@class,"service-art")]'):errors.append(f'{page}: service illustration missing')
+        if 'theme-' not in d.xpath('//main')[0].get('class',''):errors.append(f'{page}: service identity missing')
         if d.xpath('//base'):errors.append(f'{page}: base breaks in-page links')
 print(json.dumps({'pages':len(docs),'checked_urls':checks,'errors':errors},ensure_ascii=False,indent=2))
 sys.exit(bool(errors))
