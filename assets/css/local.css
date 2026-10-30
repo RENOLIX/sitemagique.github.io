@@ -26,13 +26,13 @@ body.dark-mode #sbs-1362 .cs-image-group{border:0;background:transparent;box-sha
 #pricing-1690 .cs-content>.cs-button-solid{margin-top:.5rem}
 }
 
-/* Keep one set of billboard supports on phones and remove only the duplicate. */
+/* Mobile billboard stays in flow, with one pair of supports. */
 @media only screen and (max-width:47.999rem){
-#cta-1693 .cs-wrapper{transform:translateX(-50%) translateY(9rem)!important}
-#cta-1693 .cs-container{top:9rem!important}
-body.dark-mode #cta-1693 .cs-lights-wrapper{transform:translateX(-50%) translateY(9rem)!important}
+#cta-1693 .cs-wrapper{transform:translateX(-50%)!important}
+#cta-1693 .cs-container{top:0!important}
+body.dark-mode #cta-1693 .cs-lights-wrapper{transform:translateX(-50%) translateY(0)!important}
 #cta-1693 .cs-container:after{height:12rem!important}
-#cta-1693 .cs-wrapper:after{content:""!important;display:block!important;top:calc(80% - 4.75rem)!important;height:12rem!important}
+#cta-1693 .cs-wrapper:after{display:none!important}
 }
 
 /* Accueil mobile : bouton Services centré et portrait engagement rapproché. */

@@ -63,3 +63,7 @@ for item in DATA:
     for el in d.xpath('//meta[@property="og:image" or @name="twitter:image"]'):el.set('content','https://sitemagique.com/assets/images/site-magique-logo.png')
     path.write_text('<!DOCTYPE html>\n'+render(d),encoding='utf-8')
 print('Applied 8 distinct art directions, layouts and service illustrations in French and English.')
+
+# Restore the shared brand banner after generating the distinct service layouts.
+import runpy
+runpy.run_path(str(ROOT/'scripts/service-brand.py'))

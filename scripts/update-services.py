@@ -125,7 +125,7 @@ for path in ROOT.rglob('*.html'):
         return start+f'<img src="{PHOTO}" alt="{"Tropical beach beside a wooden villa" if lang=="en" else "Plage tropicale et villa en bois au bord de la mer"}" width="1200" height="2133" decoding="async" loading="lazy"></picture>'
     text=re.sub(r'<picture\b.*?</picture>',picture,text,flags=re.S)
     text=re.sub(r'/assets/js/nav\.js(?:\?[^"\s]*)?',f'/assets/js/nav.js?v={VERSION}',text)
-    text=re.sub(r'/assets/css/root\.css(?:\?[^"\s]*)?',f'/assets/css/root.css?v={VERSION}',text)
+    text=re.sub(r'/assets/css/root\.css(?:\?[^"\s]*)?',f'/assets/css/root.css?v=20261030-cta',text)
     if '/assets/css/services.css' not in text:text=text.replace('</head>',f'<link rel="stylesheet" href="/assets/css/services.css?v={VERSION}"></head>')
     # Normalize internal directory links and remove invalid preload URLs.
     text=re.sub(r'<link\b[^>]*href=""[^>]*>','',text)
