@@ -1,0 +1,21 @@
+/* White page surfaces; brand banners, cards and illustrative interfaces keep their colours. */
+body:not(.dark-mode),body:not(.dark-mode) main{background:#fff!important}
+body:not(.dark-mode) main>section:not(#hero-855),
+body:not(.dark-mode) .sm-service>section,
+body:not(.dark-mode) .sm-highlights,
+body:not(.dark-mode) .blog-content,
+body:not(.dark-mode) #tech-stack-showcase .sm-av-skills{background:#fff!important}
+body:not(.dark-mode) .sm-service .sm-highlights div,
+body:not(.dark-mode) .sm-service .sm-highlights strong{color:var(--sm-ink)}
+body:not(.dark-mode) .theme-call .sm-hero-grid>div:first-child h1,
+body:not(.dark-mode) .theme-call .sm-hero-grid>div:first-child p,
+body:not(.dark-mode) .theme-call .sm-breadcrumb,
+body:not(.dark-mode) .theme-call .sm-service-hero .sm-text-link{color:var(--sm-ink)}
+body:not(.dark-mode) .theme-call .sm-service-hero .sm-eyebrow{color:#ac3e20}
+body:not(.dark-mode) .theme-call .sm-service-hero .art-caption{color:#526578}
+body:not(.dark-mode) #sbs-1640 :is(.cs-title,.cs-text,.cs-topper,.cs-desc,.cs-li){color:var(--primary)!important}
+body:not(.dark-mode) #sbs-1640 .cs-icon{filter:none}
+body:not(.dark-mode) #tech-stack-showcase,
+body:not(.dark-mode) #tech-stack-showcase :is(.sm-av-sticky,.sm-av-copy p,.sm-av-meta>p,.sm-av-tags span,.sm-av-heading h3,.sm-av-item){color:var(--primary)!important}
+body:not(.dark-mode) #tech-stack-showcase :is(.sm-av-copy strong,.sm-av-label,.sm-av-label h2){color:#006a9b!important}
+body:not(.dark-mode) #tech-stack-showcase .sm-av-item[data-light-logo] img{filter:none}

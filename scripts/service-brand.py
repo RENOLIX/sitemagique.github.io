@@ -28,6 +28,8 @@ for p in ROOT.rglob('*.html'):
     s = p.read_text(encoding='utf-8')
     s = re.sub(r'<link\b(?=[^>]*\brel=["\'][^"\']*icon[^"\']*["\'])[^>]*>', '', s)
     s = s.replace('</head>', icons+'</head>')
+    if '/assets/css/page-backgrounds.css' not in s:
+        s = s.replace('</head>', '<link rel="stylesheet" href="/assets/css/page-backgrounds.css?v=20261030"></head>')
     s = re.sub(r'(/assets/css/service-themes\.css)(?:\?[^"\s<>]*)?', r'\1?v=20261030-brand', s)
     p.write_text(s, encoding='utf-8')
 print('Shared banners, typography asset version and favicon declarations updated.')
