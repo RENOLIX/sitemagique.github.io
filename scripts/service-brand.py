@@ -13,9 +13,8 @@ for item in data:
         p = ROOT/('en' if lang == 'en' else '')/item['slug']/'index.html'
         d = html.document_fromstring(p.read_text(encoding='utf-8'))
         main = d.get_element_by_id('main')
-        if item['slug'] == 'logiciels-sur-mesure':
-            for crumb in main.xpath('.//nav[@class="sm-breadcrumb"]'):
-                crumb.getparent().remove(crumb)
+        for crumb in main.xpath('.//nav[@class="sm-breadcrumb"]'):
+            crumb.getparent().remove(crumb)
         for old in main.xpath('./div[@id="banner-1519"]'):
             main.remove(old)
         banner = deepcopy(template)
