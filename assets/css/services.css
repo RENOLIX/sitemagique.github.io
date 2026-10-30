@@ -3,7 +3,7 @@
 #cs-navigation .sm-menu-trigger:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #43b7ff;outline-offset:5px}
 #cs-navigation .cs-drop-ul{max-height:75vh;overflow-y:auto}
 @media(min-width:64rem){#cs-navigation .sm-services-menu>.cs-drop-ul{width:32rem;display:grid;grid-template-columns:1fr 1fr;padding:1rem;gap:.15rem}#cs-navigation .sm-services-menu .cs-drop-li{width:auto}#cs-navigation .sm-services-menu .cs-drop-link{white-space:normal;padding:.65rem .8rem;font-size:.94rem}}
-.sm-service{--sm-ink:#062a4d;--sm-muted:#526578;--sm-line:#dce7ef;--sm-paper:#fff;--sm-tint:#f1f7fb;color:var(--sm-ink);background:var(--sm-paper)}
+.sm-service{font-family:var(--bodyFont);--sm-ink:#062a4d;--sm-muted:#526578;--sm-line:#dce7ef;--sm-paper:#fff;--sm-tint:#f1f7fb;color:var(--sm-ink);background:var(--sm-paper)}
 .sm-service *{box-sizing:border-box}
 .sm-service [id]{scroll-margin-top:8rem}
 .sm-wrap{width:min(80rem,90%);margin-inline:auto}
@@ -12,10 +12,10 @@
 .sm-breadcrumb a{color:inherit;text-underline-offset:4px}
 .sm-hero-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:4rem;align-items:center}
 .sm-eyebrow{display:block;color:#1875a8;font-size:.76rem;font-weight:700;text-transform:uppercase;letter-spacing:.18em;margin-bottom:1.1rem}
-.sm-service h1{font-family:var(--headerFont);font-size:clamp(2.5rem,4.6vw,4.5rem);line-height:1.13;text-transform:uppercase;margin:0 0 1.5rem;color:var(--sm-ink)}
-.sm-service h2{font-family:var(--headerFont);font-size:clamp(2rem,3vw,3rem);line-height:1.2;text-transform:uppercase;margin:0 0 1.2rem;color:var(--sm-ink)}
-.sm-service h3{font-family:var(--headerFont);font-size:1.3rem;line-height:1.35;color:var(--sm-ink);margin:0 0 .75rem}
-.sm-service p{font-size:1.05rem;line-height:1.8;color:var(--sm-muted);margin:0 0 1.25rem}
+.sm-service h1{font-family:var(--headerFont);font-size:var(--headerFontSize);line-height:1.2em;font-weight:900;text-transform:uppercase;letter-spacing:normal;max-width:43.75rem;margin:0 0 1rem;color:var(--primary)}
+.sm-service h2{font-family:var(--headerFont);font-size:2rem;line-height:1.1em;font-weight:700;text-transform:uppercase;letter-spacing:normal;margin:0 0 1rem;color:var(--sm-ink)}
+.sm-service h3{font-family:var(--headerFont);font-size:1.5rem;line-height:1.1em;font-weight:700;text-transform:uppercase;letter-spacing:normal;color:var(--sm-ink);margin:0 0 1rem}
+.sm-service p{font-family:var(--bodyFont);font-size:var(--bodyFontSize);line-height:1.5em;letter-spacing:normal;color:var(--bodyTextColor);margin:0 0 1rem}
 .sm-actions{display:flex;gap:1rem;flex-wrap:wrap;align-items:center;margin:2rem 0 1rem}
 .sm-text-link{color:var(--sm-ink);font-weight:700;font-size:.9rem;text-underline-offset:5px;padding:.7rem 0}
 .sm-service .sm-note{font-size:.82rem;margin:1rem 0 0}
@@ -53,4 +53,6 @@ body.dark-mode .sm-service{--sm-ink:#eaf5ff;--sm-muted:#b6c9d8;--sm-line:#2b465a
 body.dark-mode .sm-budget{background:#103750}
 body.dark-mode .sm-service .sm-eyebrow,body.dark-mode .sm-service .sm-feature-number,body.dark-mode .sm-service .sm-steps strong{color:#72caff}
 @media(max-width:63.9375rem){#cs-navigation .sm-menu-trigger{margin-inline:auto}.sm-hero-grid{gap:2rem}.sm-service-hero{padding-top:8rem}.sm-split{gap:2.5rem}.sm-steps{grid-template-columns:1fr 1fr}.sm-feature-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:47.9375rem){.sm-hero-grid,.sm-split{grid-template-columns:1fr}.sm-service-visual{width:min(100%,26rem);margin:1rem auto 0}.sm-service-hero{padding-bottom:2.5rem}.sm-breadcrumb{margin-bottom:2rem}.sm-section{padding:3.5rem 0}.sm-feature-grid,.sm-related{grid-template-columns:1fr}.sm-highlights{grid-template-columns:1fr}.sm-highlights div{padding:1rem}.sm-highlights div+div{border-top:1px solid var(--sm-line)}.sm-budget{padding:1.7rem}.sm-service h1{font-size:2.6rem}.sm-actions{gap:.6rem 1.3rem}.sm-steps{gap:1.25rem}.sm-feature{padding:1.5rem}}
+@media(max-width:47.9375rem){.sm-hero-grid,.sm-split{grid-template-columns:1fr}.sm-service-visual{width:min(100%,26rem);margin:1rem auto 0}.sm-service-hero{padding-bottom:2.5rem}.sm-breadcrumb{margin-bottom:2rem}.sm-section{padding:3.5rem 0}.sm-feature-grid,.sm-related{grid-template-columns:1fr}.sm-highlights{grid-template-columns:1fr}.sm-highlights div{padding:1rem}.sm-highlights div+div{border-top:1px solid var(--sm-line)}.sm-budget{padding:1.7rem}.sm-actions{gap:.6rem 1.3rem}.sm-steps{gap:1.25rem}.sm-feature{padding:1.5rem}}
+
+body.dark-mode .sm-service p{color:var(--sm-muted)}
