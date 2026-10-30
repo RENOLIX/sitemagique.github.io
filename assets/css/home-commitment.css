@@ -1,0 +1,76 @@
+/* A single composition connects the founder portrait and the agency commitments. */
+#sbs-1362.sm-commitment{padding:clamp(3.75rem,7vw,6.25rem) 1rem!important;margin:0!important;color:var(--primary);background:#fff}
+#sbs-1362 .sm-commit-wrap{width:100%;max-width:80rem;margin-inline:auto}
+#sbs-1362 .sm-commit-heading{display:grid;grid-template-columns:1fr .8fr;align-items:end;gap:clamp(2rem,5vw,5rem);margin-bottom:2.25rem}
+#sbs-1362 .sm-commit-eyebrow{display:flex;align-items:center;gap:.75rem;color:#0078a9;font-family:var(--headerFont);font-size:.875rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;margin-bottom:1rem}
+#sbs-1362 .sm-commit-eyebrow:before{content:"";width:2rem;height:2px;background:currentColor}
+#sbs-1362 .sm-commit-title{font-family:var(--headerFont);font-size:var(--headerFontSize);font-weight:900;line-height:1.2;letter-spacing:normal;color:var(--primary);margin:0}
+#sbs-1362 .sm-commit-heading>p{font-family:var(--bodyFont);font-size:1rem;line-height:1.7;color:#526578;margin:0 0 .2rem;max-width:34rem}
+#sbs-1362 .sm-commit-panel{display:grid;grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);border:1px solid #d9e5ee;border-radius:1.5rem;overflow:hidden;background:#fff;box-shadow:0 18px 60px #001f3f08}
+#sbs-1362 .sm-commit-portrait{margin:0;display:grid;grid-template-rows:minmax(0,1fr) auto;min-width:0;background:#edf5fa;border-right:1px solid #d9e5ee}
+#sbs-1362 .sm-commit-photo{position:relative;min-height:31rem;overflow:hidden;isolation:isolate}
+#sbs-1362 .sm-commit-photo:before{content:"";position:absolute;width:85%;aspect-ratio:1;border:1px solid #d4e7f2;border-radius:50%;top:16%;left:7.5%;z-index:-1;box-shadow:0 0 0 2rem #f6faff}
+#sbs-1362 .sm-commit-photo>img{position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:cover;object-position:center 25%}
+#sbs-1362 .sm-commit-photo-label{position:absolute;z-index:1;top:1.5rem;left:1.5rem;font-family:var(--headerFont);font-size:.75rem;font-weight:600;letter-spacing:.1em;color:#174466}
+#sbs-1362 .sm-commit-photo-label>span{font-family:var(--bodyFont);font-weight:400;letter-spacing:0;color:#526578}
+#sbs-1362 .sm-commit-portrait figcaption{display:flex;align-items:center;gap:1rem;background:var(--primary);color:#fff;padding:1.4rem 1.5rem;position:relative}
+#sbs-1362 .sm-commit-portrait figcaption>img{width:2.625rem;height:2.625rem;object-fit:contain;filter:brightness(0) invert(1);flex:none}
+#sbs-1362 .sm-commit-portrait figcaption strong{display:block;font-family:var(--headerFont);font-size:1rem;font-weight:600;line-height:1.4;letter-spacing:.02em}
+#sbs-1362 .sm-commit-portrait figcaption span{display:block;font-size:.875rem;line-height:1.5;color:#bdd4e3;margin-top:.15rem}
+#sbs-1362 .sm-commit-details{padding:clamp(1.5rem,3vw,2.5rem);min-width:0}
+#sbs-1362 .sm-commit-promise{display:grid;grid-template-columns:2.75rem 1fr;gap:1rem;padding-bottom:1.75rem}
+#sbs-1362 .sm-commit-promise-icon{display:grid;place-items:center;width:2.75rem;height:2.75rem;border-radius:50%;background:var(--primary);color:#fff}
+#sbs-1362 .sm-commit-promise-icon svg{width:1.6rem;height:1.6rem}
+#sbs-1362 .sm-commit-kicker{display:block;font-family:var(--headerFont);font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#0078a9;margin-bottom:.6rem}
+#sbs-1362 .sm-commit-promise h3{font-family:var(--headerFont);font-size:clamp(1.625rem,2.4vw,2rem);line-height:1.25;font-weight:700;color:var(--primary);margin:0 0 .75rem;text-transform:uppercase}
+#sbs-1362 .sm-commit-promise p{font-family:var(--bodyFont);font-size:.9375rem;line-height:1.6;color:#526578;margin:0;max-width:35rem}
+#sbs-1362 .sm-commit-benefits{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:1.5rem 2rem;margin:0;padding:1.75rem 0;border-block:1px solid #e1eaf0}
+#sbs-1362 .sm-commit-benefit{display:grid;grid-template-columns:1.4rem 1fr;gap:.7rem;min-width:0;margin:0;padding:0}
+#sbs-1362 .sm-commit-icon{display:block;color:#0089b9;padding-top:.1rem}
+#sbs-1362 .sm-commit-icon svg{width:1.4rem;height:1.4rem;display:block}
+#sbs-1362 .sm-commit-benefit h4{font-family:var(--headerFont);font-size:1.125rem;font-weight:600;line-height:1.35;color:var(--primary);margin:0 0 .5rem;text-transform:uppercase}
+#sbs-1362 .sm-commit-benefit p{font-family:var(--bodyFont);font-size:.875rem;line-height:1.6;color:#526578;margin:0}
+#sbs-1362 .sm-commit-bottom{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;padding-top:1.75rem;flex-wrap:wrap}
+#sbs-1362 .sm-commit-bottom .sm-commit-kicker{margin-bottom:.4rem}
+#sbs-1362 .sm-commit-bottom p{font-size:.875rem;line-height:1.6;color:#526578;margin:0}
+#sbs-1362 .sm-commit-bottom .cs-button-solid{padding-inline:1.75rem;min-width:0;font-size:.875rem}
+#sbs-1362 .sm-commit-bottom .cs-button-solid>span{margin-left:.5rem}
+body.dark-mode #sbs-1362.sm-commitment{background:var(--dark);color:#fff}
+body.dark-mode #sbs-1362 :is(.sm-commit-title,.sm-commit-promise h3,.sm-commit-benefit h4){color:#fff}
+body.dark-mode #sbs-1362 :is(.sm-commit-heading>p,.sm-commit-promise p,.sm-commit-benefit p,.sm-commit-bottom p){color:#bdd0de}
+body.dark-mode #sbs-1362 .sm-commit-panel{background:#0a2133;border-color:#294659}
+body.dark-mode #sbs-1362 .sm-commit-portrait{border-color:#294659}
+body.dark-mode #sbs-1362 :is(.sm-commit-kicker,.sm-commit-eyebrow,.sm-commit-icon){color:#71cfff}
+body.dark-mode #sbs-1362 .sm-commit-benefits{border-color:#294659}
+@media(max-width:63.999rem){
+ #sbs-1362 .sm-commit-heading{grid-template-columns:1fr;gap:1.25rem}
+ #sbs-1362 .sm-commit-heading>p{max-width:45rem}
+ #sbs-1362 .sm-commit-panel{grid-template-columns:minmax(0,.7fr) minmax(0,1fr)}
+ #sbs-1362 .sm-commit-benefits{grid-template-columns:1fr;gap:1.25rem}
+ #sbs-1362 .sm-commit-photo>img{object-position:50% 50%}
+}
+@media(max-width:47.999rem){
+ #sbs-1362.sm-commitment{padding-block:3.5rem!important}
+ #sbs-1362 .sm-commit-heading{margin-bottom:1.5rem}
+ #sbs-1362 .sm-commit-panel{grid-template-columns:1fr;border-radius:1.25rem}
+ #sbs-1362 .sm-commit-portrait{border-right:0;border-bottom:1px solid #d9e5ee}
+ #sbs-1362 .sm-commit-photo{height:clamp(22rem,80vw,32rem);min-height:0}
+ #sbs-1362 .sm-commit-photo>img{object-position:center 20%}
+ #sbs-1362 .sm-commit-photo-label{top:1.1rem;left:1.25rem;font-size:.6875rem}
+ #sbs-1362 .sm-commit-portrait figcaption{padding:1.1rem 1.25rem;gap:.8rem}
+ #sbs-1362 .sm-commit-portrait figcaption strong{font-size:.9375rem}
+ #sbs-1362 .sm-commit-details{padding:1.5rem 1.25rem}
+ #sbs-1362 .sm-commit-promise{grid-template-columns:2.25rem 1fr;gap:.75rem;padding-bottom:1.5rem}
+ #sbs-1362 .sm-commit-promise-icon{width:2.25rem;height:2.25rem}
+ #sbs-1362 .sm-commit-promise h3{font-size:1.5rem}
+ #sbs-1362 .sm-commit-benefits{gap:1.25rem;padding-block:1.5rem}
+ #sbs-1362 .sm-commit-bottom{align-items:stretch;gap:1.25rem;padding-top:1.5rem}
+ #sbs-1362 .sm-commit-bottom>div{width:100%}
+ #sbs-1362 .sm-commit-bottom .cs-button-solid{width:100%;padding-inline:1rem;text-align:center}
+}
+@media(max-width:22rem){
+ #sbs-1362 .sm-commit-photo{height:22rem}
+ #sbs-1362 .sm-commit-promise{grid-template-columns:1fr}
+ #sbs-1362 .sm-commit-portrait figcaption>img{width:2rem;height:2rem}
+ #sbs-1362 .sm-commit-portrait figcaption strong{font-size:.825rem}
+}
